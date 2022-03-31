@@ -1,0 +1,87 @@
+<%= form_with(model: character) do |form| %>
+  <% if character.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(character.errors.count, "error") %> prohibited this character from being saved:</h2>
+
+      <ul>
+        <% character.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :race %>
+    <%= form.text_field :race %>
+  </div>
+
+  <div class="field">
+    <%= form.label :jobclass %>
+    <%= form.text_field :jobclass %>
+  </div>
+
+  <div class="field">
+    <%= form.label :alignment %>
+    <%= form.text_field :alignment %>
+  </div>
+
+  <div class="field">
+    <%= form.label :personality %>
+    <%= form.text_field :personality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mainquality %>
+    <%= form.text_field :mainquality %>
+  </div>
+
+  <div class="field">
+    <%= form.label :mainfault %>
+    <%= form.text_field :mainfault %>
+  </div>
+
+  <div class="field">
+    <%= form.label :haircolor %>
+    <%= form.text_field :haircolor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :eyescolor %>
+    <%= form.text_field :eyescolor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :signs %>
+    <%= form.text_area :signs %>
+  </div>
+
+  <div class="field">
+    <%= form.label :past %>
+    <%= form.text_area :past %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dream %>
+    <%= form.text_area :dream %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

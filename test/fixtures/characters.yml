@@ -1,0 +1,33 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  age: 
+  gender: MyString
+  race: MyString
+  jobclass: MyString
+  alignment: MyString
+  personality: MyString
+  mainquality: MyString
+  mainfault: MyString
+  haircolor: MyString
+  eyescolor: MyString
+  signs: MyText
+  past: MyText
+  dream: MyText
+
+two:
+  name: MyString
+  age: 
+  gender: MyString
+  race: MyString
+  jobclass: MyString
+  alignment: MyString
+  personality: MyString
+  mainquality: MyString
+  mainfault: MyString
+  haircolor: MyString
+  eyescolor: MyString
+  signs: MyText
+  past: MyText
+  dream: MyText

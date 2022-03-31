@@ -17,28 +17,25 @@
  @import "bootstrap";
 
  body {
-   background-color: #000;
-  color: white;
-  background-image: url("https://wallpaperaccess.com/full/164693.jpg");
-  background-size: auto;
-  background-repeat: no-repeat;
-  margin: 33px; }
+  color: black;
+  background-color: white;
+  margin: 3%;}
 
 body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
+  font-size: auto;
   line-height: 18px; }
 
 pre {
   background-color: black;
   padding: 10px;
-  font-size: 11px; }
+  font-size: auto; }
 
 a {
-  color: white; }
+  color: cyan; }
 
 a:visited {
-  color: white; }
+  color: blue; }
 
 a:hover {
   color: red;
@@ -54,7 +51,7 @@ td {
 
 div.field,
 div.actions {
-  margin-bottom: 10px; }
+  margin-bottom: 2%; }
 
 #notice {
   color: green; }

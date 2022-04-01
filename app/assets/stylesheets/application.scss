@@ -16,12 +16,17 @@
 
  @import "bootstrap";
 
- body {
+body {
+  margin : 0px;
   color: white;
   background-color: black;
-  margin: 3%;}
+}
 
-body, p, ol, ul, td {
+.pseudo-body {
+  margin: 3%;
+}
+
+.pseudo-body, p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: auto;
   line-height: 18px; }
@@ -123,4 +128,24 @@ label {
   height: 100%;
   width: 100%;
   justify-content: center;
+}
+
+.navbar {
+  background-color: #CD0003;
+}
+
+.allforms {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.input-group {
+  margin-top: 25px;
+}
+
+.input-group-text {
+  background-color: #CD0003;
+  color: white;
+  border-style: none;
 }

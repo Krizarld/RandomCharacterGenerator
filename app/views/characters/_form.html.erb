@@ -1,7 +1,4 @@
-<div class="centercontainer">
-  <%# <h1><a href="" class="randomize-button">Générer un personnage aléatoire</a></h1> %>
-  <div class="randomize-button"><a href=""><img src="https://cdn.discordapp.com/attachments/495991546928431116/959431671176908900/Group_3.png" alt="Générer un personnage"></a></div>
-</div>
+
 
 <%= form_with(model: character) do |form| %>
   <% if character.errors.any? %>
@@ -16,64 +13,70 @@
     </div>
   <% end %>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Nom du personnage</span>
-    <%= form.text_field :name, class:"form-control form-control-lg" %>
-  </div>
+  <div class="allforms">
+    <section class="leftform">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Nom du personnage</span>
+        <%= form.text_field :name, class:"form-control form-control-lg", placeholder:"Écrire ici..." %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Âge</span>
-    <%= form.text_field :age, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Âge</span>
+        <%= form.text_field :age, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Genre</span>
-    <%= form.text_field :gender, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Genre</span>
+        <%= form.text_field :gender, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Race</span>
-    <%= form.text_field :race, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Race</span>
+        <%= form.text_field :race, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Classe de personnage</span>
-    <%= form.text_field :jobclass, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Classe de personnage</span>
+        <%= form.text_field :jobclass, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Alignement</span>
-    <%= form.text_field :alignment, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Alignement</span>
+        <%= form.text_field :alignment, class:"form-control form-control-lg" %>
+      </div>
+    </section>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Personnalité (MBTI)</span>
-    <%= form.text_field :personality, class:"form-control form-control-lg" %>
-  </div>
+    <section class="rightform">
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Personnalité (MBTI)</span>
+        <%= form.text_field :personality, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Principale qualité</span>
-    <%= form.text_field :mainquality, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Principale qualité</span>
+        <%= form.text_field :mainquality, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Principal défaut</span>
-    <%= form.text_field :mainfault, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Principal défaut</span>
+        <%= form.text_field :mainfault, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Couleur de cheveux</span>
-    <%= form.text_field :haircolor, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Couleur de cheveux</span>
+        <%= form.text_field :haircolor, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Couleur des yeux</span>
-    <%= form.text_field :eyescolor, class:"form-control form-control-lg" %>
-  </div>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Couleur des yeux</span>
+        <%= form.text_field :eyescolor, class:"form-control form-control-lg" %>
+      </div>
 
-  <div class="input-group input-group-lg">
-    <span class="input-group-text" id="inputGroup-sizing-lg">Signe(s) distinctif(s)</span>
-    <%= form.text_field :signs, class:"form-control form-control-lg" %>
+      <div class="input-group input-group-lg">
+        <span class="input-group-text" id="inputGroup-sizing-lg">Signe(s) distinctif(s)</span>
+        <%= form.text_field :signs, class:"form-control form-control-lg" %>
+      </div>
+    </section>
   </div>
 
   <div class="input-group input-group-lg">

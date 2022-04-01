@@ -17,8 +17,8 @@
  @import "bootstrap";
 
  body {
-  color: #01110A;
-  background-color: #D5F2E3;
+  color: white;
+  background-color: black;
   margin: 3%;}
 
 body, p, ol, ul, td {
@@ -32,14 +32,10 @@ pre {
   font-size: auto; }
 
 a {
-  color: cyan; }
+  color: red; }
 
 a:visited {
   color: blue; }
-
-a:hover {
-  color: red;
-  background-color: #000; }
 
 th {
   color: white;
@@ -93,14 +89,32 @@ label {
 }
 
 .randomize-button {
-  background-color: #BA2D0B;
-  border-color: #9e2000;
+  margin: 1%;
 }
 
-.randomize-button:hover {
-  background-color: #9e2000;
-  border-color: #9e2000;
+.randomize-button a {
+  transition: 0.3s;
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  filter: brightness(100%);
 }
+
+.randomize-button a img {
+  width: 80%;
+  height: 80%;
+  filter: brightness(100%);
+}
+
+.randomize-button a:hover {
+  transition: 0.3s;
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  filter: brightness(150%);
+
+}
+
 
 .centercontainer {
   text-align: center;

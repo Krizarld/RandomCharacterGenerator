@@ -17,8 +17,8 @@
  @import "bootstrap";
 
  body {
-  color: black;
-  background-color: white;
+  color: #01110A;
+  background-color: #D5F2E3;
   margin: 3%;}
 
 body, p, ol, ul, td {
@@ -85,5 +85,28 @@ label {
   display: block; }
 
 .jumbotron {
-  background-color: #E9ECEF;
+  background-color: #D5F2E3;
+  padding: 35px;
+  border-radius: 30px;
+  border: 15px solid;
+  border-color: #BA2D0B;
+}
+
+.randomize-button {
+  background-color: #BA2D0B;
+  border-color: #9e2000;
+}
+
+.randomize-button:hover {
+  background-color: #9e2000;
+  border-color: #9e2000;
+}
+
+.centercontainer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
 }

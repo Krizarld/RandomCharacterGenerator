@@ -13,13 +13,14 @@
     </div>
   <% end %>
 
+
+  <div class="input-group input-group-lg">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Nom du personnage</span>
+    <%= form.text_field :name, class:"form-control form-control-lg", placeholder:"Écrire ici..." %>
+  </div>
+
   <div class="allforms">
     <section class="leftform">
-      <div class="input-group input-group-lg">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Nom du personnage</span>
-        <%= form.text_field :name, class:"form-control form-control-lg", placeholder:"Écrire ici..." %>
-      </div>
-
       <div class="input-group input-group-lg">
         <span class="input-group-text" id="inputGroup-sizing-lg">Âge</span>
         <%= form.text_field :age, class:"form-control form-control-lg" %>

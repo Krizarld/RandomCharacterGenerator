@@ -71,12 +71,12 @@
         <span class="input-group-text" id="inputGroup-sizing-lg">Couleur des yeux</span>
         <%= form.text_field :eyescolor, class:"form-control form-control-lg" %>
       </div>
-
-      <div class="input-group input-group-lg">
-        <span class="input-group-text" id="inputGroup-sizing-lg">Signe(s) distinctif(s)</span>
-        <%= form.text_field :signs, class:"form-control form-control-lg" %>
-      </div>
     </section>
+  </div>
+
+  <div class="input-group input-group-lg">
+    <span class="input-group-text" id="inputGroup-sizing-lg">Signe(s) distinctif(s)</span>
+    <%= form.text_field :signs, class:"form-control form-control-lg" %>
   </div>
 
   <div class="input-group input-group-lg">
@@ -91,7 +91,7 @@
 
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
+ <%#  <div class="actions">
+ <%#    <%= form.submit %>
+  <%# </div> %>
 <% end %>
